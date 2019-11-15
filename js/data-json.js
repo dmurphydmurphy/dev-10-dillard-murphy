@@ -8,7 +8,7 @@ xhr.onload = function() {                       // When readystate changes
   // The following conditional check will not work locally - only on a server
   //if(xhr.status === 200) {                      // If server status was ok
     responseObject = JSON.parse(xhr.responseText);
-    console.log(responseObject);
+  
     // BUILD UP STRING WITH NEW CONTENT (could also use DOM manipulation)
     var newContent = '';
     for (var i = 0; i < responseObject.events.length; i++) { // Loop through object
